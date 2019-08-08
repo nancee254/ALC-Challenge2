@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CreateNewDeal"
+    tools:showIn="@layout/activity_create_new_deal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <EditText
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:hint="@string/deal_title"
+            android:inputType="textPersonName"
+            android:padding="@dimen/fab_margin"
+            tools:ignore="Autofill,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+
+            android:ems="10"
+            android:hint="@string/deal_price"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/fab_margin"
+            tools:ignore="Autofill,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+
+            android:ems="10"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/fab_margin"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="2dp"
+            android:paddingRight="2dp"
+            tools:ignore="Autofill,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/dealImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+            android:padding="@dimen/fab_margin"
+            android:text="Attach image"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed-light"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/myDealImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    </LinearLayout>
+</ScrollView>
